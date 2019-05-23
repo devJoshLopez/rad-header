@@ -95,4 +95,8 @@ svg g.keyframe {
     height: 100vh;
   }
 
+  .twin._1 {
+    align-self: flex-start;
+  }
+
 }
