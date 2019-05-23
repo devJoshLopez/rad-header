@@ -19,4 +19,14 @@ $(document).ready(() => {
 
     svgKeyframeTimelineTwin1.play();
     svgKeyframeTimelineTwin2.play();
+
+
+    var headerTitles = new Array(
+        "Brand’s Hate Us For This One Simple Trick",
+        "Our Beziers Bring All The Boys To The Yard",
+        "Life’s Like a Box of Color Swatches",
+        "Kerning? Yea we do that."
+    ),
+        randno = headerTitles[Math.floor( Math.random() * headerTitles.length )];
+    $('.header-title').text( randno );
 });
