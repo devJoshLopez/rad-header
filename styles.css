@@ -40,6 +40,10 @@ body {
     transform: rotate(-90deg);
 }
 
+.header-title {
+    display: none;
+}
+
 .twin._1 {
   align-self: flex-end;
 }
