@@ -69,7 +69,7 @@ svg g.keyframe {
   display: block;
 }
 
-@media (min-width: 1025px) and (min-height: 800px) {
+@media (min-width: 1025px) {
   /* For desktop: */
 
   .svg-animation-wrapper.desktop {
