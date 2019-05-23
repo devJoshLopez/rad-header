@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+}
+
+.animation-img {
+  width: 100vw;
+  height: auto;
+}
+
+.overflow-wrapper {
+  overflow: hidden;
+}
+
+.twin-section {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+}
+
+.flex-filler {
+  flex-grow: 1;
+}
+
+.twin._1 {
+  align-self: flex-end;
+}
+
+.twin._2 {
+  align-self: self-start;
+}
+
+.svg-animation-wrapper {
+  position: relative;
+}
+
+.svg-animation-wrapper img {
+  /* gets rid of small padding below img */
+  display: block;
+}
+
+.svg-animation-wrapper svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+svg .a {
+  fill: rgba(255, 255, 255, 0);
+}
+
+svg .b {
+  fill: #ffb61a;
+}
+
+svg g.keyframe {
+  visibility: hidden;
+}
+
+.svg-animation-wrapper.desktop {
+  display: none;
+}
+
+.svg-animation-wrapper.mobile {
+  display: block;
+}
+
+@media (min-width: 1025px) and (min-height: 800px) {
+  /* For desktop: */
+
+  .svg-animation-wrapper.desktop {
+    display: block;
+  }
+
+  .svg-animation-wrapper.mobile {
+    display: none;
+  }
+
+  .twin-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    min-height: 800px;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .animation-img {
+    width: auto;
+    height: 100vh;
+  }
+
+}
