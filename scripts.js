@@ -22,10 +22,11 @@ $(document).ready( () => {
 
 
     var headerTitles = new Array(
-        "Brand’s Hate Us For This One Simple Trick",
-        "Our Beziers Bring All The Boys To The Yard",
-        "Life’s Like a Box of Color Swatches",
-        "Kerning? Yea we do that."
+        "We design brands with our creative vision"
+        // "Brand’s Hate Us For This One Simple Trick",
+        // "Our Beziers Bring All The Boys To The Yard",
+        // "Life’s Like a Box of Color Swatches",
+        // "Kerning? Yea we do that."
     ),
         headerTitle = $('.header-title'),
         randno = headerTitles[Math.floor(Math.random() * headerTitles.length)];
