@@ -1,8 +1,17 @@
 $(document).ready(() => {
     window.onresize = function() {
         document.body.height = window.innerHeight;
+
+        $(".twin-section").css({
+            height: window.innerHeight
+          });
     }
     window.onresize(); // called to initially set the height.
+
+
+    $(".twin-section").css({
+        height: window.innerHeight
+      });
 
     var svgKeyframeTimelineTwin1 = new TimelineMax({ repeat: -1 });
     var svgKeyframeCountTwin1 = $(".twin._1 .desktop svg g.keyframe").length;
