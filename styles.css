@@ -36,8 +36,10 @@ body {
     transform: translateX(-50%) translateY(-50%);
     line-height: 1;
 }
-.header-title-container h1 {
+
+h1.header-title {
     transform: rotate(0deg);
+    visibility: hidden;
 }
 
 .twin._1 {
@@ -127,7 +129,7 @@ svg g.keyframe {
     line-height: 1;
 }
 
-.header-title-container h1 {
+h1.header-title {
     transform: rotate(-90deg);
     padding: 0;
     margin: 0;

@@ -1,4 +1,4 @@
-$(document).ready(() => {
+$(document).ready( () => {
     var svgKeyframeTimelineTwin1 = new TimelineMax({ repeat: -1 });
     var svgKeyframeCountTwin1 = $(".twin._1 .desktop svg g.keyframe").length;
 
@@ -27,9 +27,13 @@ $(document).ready(() => {
         "Life’s Like a Box of Color Swatches",
         "Kerning? Yea we do that."
     ),
-        randno = headerTitles[Math.floor( Math.random() * headerTitles.length )];
-    $('.header-title').text(randno);
-    
+        headerTitle = $('.header-title'),
+        randno = headerTitles[Math.floor(Math.random() * headerTitles.length)];
+
+    headerTitle.text(randno);
+    TweenMax.to(headerTitle, 0, { autoAlpha: 0 });
+    TweenMax.to(headerTitle, 1, { autoAlpha: 1, ease:Power2.easeInOut, delay: 1 });
+
 });
     
 
