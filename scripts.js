@@ -32,7 +32,67 @@ $(document).ready( () => {
 
     headerTitle.text(randno);
     TweenMax.to(headerTitle, 0, { autoAlpha: 0 });
-    TweenMax.to(headerTitle, 1, { autoAlpha: 1, ease:Power2.easeInOut, delay: 1 });
+    TweenMax.to(headerTitle, 1, { autoAlpha: 1, ease: Power2.easeInOut, delay: 1 });
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    var margin = {top: 0, right: 0, bottom: 0, left: 0},
+     width = 960 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
+
+
+var npoints = 100;
+var ptdata = [];
+
+
+var line = d3.line()
+    .curve(d3.curveBasis)
+    .x(function(d, i) { return d[0]; })
+    .y(function(d, i) { return d[1]; });
+
+    var svg = d3.select("body .twin-section").append("svg")
+    .attr("class", "mousetrap")
+    .attr("width", width)
+    .attr("height", height)
+    .append("g")
+    .attr("transform", "translate(0,0)");
+
+var svgagain = d3.select("body .twin-section").select("svg.mousetrap")
+    .on("mousemove", function() { var pt = d3.mouse(this); tick(pt); });
+
+
+
+var path = svg.append("g")
+  .append("path")
+    .data([ptdata])
+    .attr("class", "line")
+    .attr("d", line);
+
+function tick(pt) {
+
+  // push a new data point onto the back
+  ptdata.push(pt);
+
+  // Redraw the path:
+  path
+      .attr("d", function(d) { return line(d);})
+
+
+  // If more than 100 points, drop the old data pt off the front
+  if (ptdata.length > npoints) {
+	  ptdata.shift();
+  }
+}
 
 });
     
