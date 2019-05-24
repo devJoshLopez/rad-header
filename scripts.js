@@ -26,27 +26,10 @@ $(document).ready(() => {
         "Our Beziers Bring All The Boys To The Yard",
         "Life’s Like a Box of Color Swatches",
         "Kerning? Yea we do that."
-    );
-    //     randno = headerTitles[Math.floor( Math.random() * headerTitles.length )];
-    // $('.header-title').text(randno);
+    ),
+        randno = headerTitles[Math.floor( Math.random() * headerTitles.length )];
+    $('.header-title').text(randno);
     
-
-    shuffle(headerTitles);
-    var headerTitle = $('.header-title');
-
-    console.log(headerTitles);
-
-    (function show(i) {
-        headerTitle.fadeOut(function () {
-            $(this).text(headerTitles[i]).slideDown(function () {
-                headerTitles[i + 1] ? show(++i) : '';
-            });
-        });  
-    })(0)
-
-    function shuffle(array) {
-        array.sort(() => Math.random() - 0.5);
-    };
 });
     
 
