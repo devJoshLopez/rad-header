@@ -1,4 +1,9 @@
-$(document).ready( () => {
+$(document).ready(() => {
+    window.onresize = function() {
+        document.body.height = window.innerHeight;
+    }
+    window.onresize(); // called to initially set the height.
+
     var svgKeyframeTimelineTwin1 = new TimelineMax({ repeat: -1 });
     var svgKeyframeCountTwin1 = $(".twin._1 .desktop svg g.keyframe").length;
 
@@ -21,6 +26,11 @@ $(document).ready( () => {
     svgKeyframeTimelineTwin2.play();
 
 
+
+    TweenMax.to(".rad-path", 0, { autoAlpha: 0 });
+    TweenMax.to(".rad-path", 1, { autoAlpha: 1, ease: Power2.easeInOut, delay: 1 });
+
+
     var headerTitles = new Array(
         "We design brands with our creative vision"
         // "Brand’s Hate Us For This One Simple Trick",
@@ -33,7 +43,7 @@ $(document).ready( () => {
 
     headerTitle.text(randno);
     TweenMax.to(headerTitle, 0, { autoAlpha: 0 });
-    TweenMax.to(headerTitle, 1, { autoAlpha: 1, ease: Power2.easeInOut, delay: 1 });
+    TweenMax.to(headerTitle, 1, { autoAlpha: 1, ease: Power2.easeInOut, delay: 2 });
     
 
 
