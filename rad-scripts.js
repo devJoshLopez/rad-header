@@ -906,7 +906,7 @@ $(document).ready(() => {
         height = 500 - margin.top - margin.bottom;
 
 //     var npoints = 100;
-    var npoints = 10;
+    var npoints = 20;
     var ptdata = [];
 
     var line = d3.line()
