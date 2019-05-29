@@ -877,8 +877,8 @@ $(document).ready(() => {
     svgKeyframeTimelineTwin1.play();
     svgKeyframeTimelineTwin2.play();
 
-//     TweenMax.to(".rad-path", 0, { autoAlpha: 0 });
-//     TweenMax.to(".rad-path", 1, { autoAlpha: 1, ease: Power2.easeInOut, delay: 1 });
+     TweenMax.to(".rad-path", 0, { autoAlpha: 0 });
+     TweenMax.to(".rad-path", 1, { autoAlpha: 1, ease: Power2.easeInOut, delay: 0.5 });
 
 //     var headerTitles = new Array(
 //         "We design brands with our creative vision"
