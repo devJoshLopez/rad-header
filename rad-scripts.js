@@ -880,19 +880,21 @@ $(document).ready(() => {
     TweenMax.to(".rad-path", 0, { autoAlpha: 0 });
     TweenMax.to(".rad-path", 1, { autoAlpha: 1, ease: Power2.easeInOut, delay: 1 });
 
-    var headerTitles = new Array(
-        "We design brands with our creative vision"
-        // "Brand’s Hate Us For This One Simple Trick",
-        // "Our Beziers Bring All The Boys To The Yard",
-        // "Life’s Like a Box of Color Swatches",
-        // "Kerning? Yea we do that."
-    ),
-        headerTitle = $('.header-title'),
-        randno = headerTitles[Math.floor(Math.random() * headerTitles.length)];
+//     var headerTitles = new Array(
+//         "We design brands with our creative vision"
+//         // "Brand’s Hate Us For This One Simple Trick",
+//         // "Our Beziers Bring All The Boys To The Yard",
+//         // "Life’s Like a Box of Color Swatches",
+//         // "Kerning? Yea we do that."
+//     ),
+//         headerTitle = $('.header-title'),
+//         randno = headerTitles[Math.floor(Math.random() * headerTitles.length)];
 
-    headerTitle.text(randno);
+//     headerTitle.text(randno);
     TweenMax.to(headerTitle, 0, { autoAlpha: 0 });
     TweenMax.to(headerTitle, 1, { autoAlpha: 1, ease: Power2.easeInOut, delay: 2 });
+        TweenMax.to(headerTitle, 0, { autoAlpha: 0 });
+    TweenMax.to(headerTitle, 1, { autoAlpha: 1, ease: Power2.easeInOut, delay: 2.5 });
 
     // code for mouse trail below
     var margin = { top: 0, right: 0, bottom: 0, left: 0 },
