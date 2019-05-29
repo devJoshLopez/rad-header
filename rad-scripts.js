@@ -891,8 +891,8 @@ $(document).ready(() => {
 //         randno = headerTitles[Math.floor(Math.random() * headerTitles.length)];
 
 //     headerTitle.text(randno);
-    var headerTitle = $('.header-title')
-    var headerText = $('.header-text')
+    var headerTitle = $('.header-title');
+    var headerText = $('.header-text');
     
     TweenMax.to(headerTitle, 0, { autoAlpha: 0 });
     TweenMax.to(headerTitle, 1, { autoAlpha: 1, ease: Power2.easeInOut, delay: 2 });
