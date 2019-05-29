@@ -877,8 +877,8 @@ $(document).ready(() => {
     svgKeyframeTimelineTwin1.play();
     svgKeyframeTimelineTwin2.play();
 
-    TweenMax.to(".rad-path", 0, { autoAlpha: 0 });
-    TweenMax.to(".rad-path", 1, { autoAlpha: 1, ease: Power2.easeInOut, delay: 1 });
+//     TweenMax.to(".rad-path", 0, { autoAlpha: 0 });
+//     TweenMax.to(".rad-path", 1, { autoAlpha: 1, ease: Power2.easeInOut, delay: 1 });
 
 //     var headerTitles = new Array(
 //         "We design brands with our creative vision"
@@ -895,10 +895,10 @@ $(document).ready(() => {
     var headerText = $('.header-text');
     
     TweenMax.to(headerTitle, 0, { autoAlpha: 0 });
-    TweenMax.to(headerTitle, 1, { autoAlpha: 1, ease: Power2.easeInOut, delay: 2 });
+    TweenMax.to(headerTitle, 1, { autoAlpha: 1, ease: Power2.easeInOut, delay: 1 });
     
     TweenMax.to(headerText, 0, { autoAlpha: 0 });
-    TweenMax.to(headerText, 1, { autoAlpha: 1, ease: Power2.easeInOut, delay: 2.5 });
+    TweenMax.to(headerText, 1, { autoAlpha: 1, ease: Power2.easeInOut, delay: 1.5 });
 
     // code for mouse trail below
     var margin = { top: 0, right: 0, bottom: 0, left: 0 },
@@ -906,7 +906,7 @@ $(document).ready(() => {
         height = 500 - margin.top - margin.bottom;
 
 //     var npoints = 100;
-    var npoints = 20;
+    var npoints = 50;
     var ptdata = [];
 
     var line = d3.line()
