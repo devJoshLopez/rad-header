@@ -891,10 +891,14 @@ $(document).ready(() => {
 //         randno = headerTitles[Math.floor(Math.random() * headerTitles.length)];
 
 //     headerTitle.text(randno);
+    var headerTitle = $('.header-title')
+    var headerText = $('.header-text')
+    
     TweenMax.to(headerTitle, 0, { autoAlpha: 0 });
     TweenMax.to(headerTitle, 1, { autoAlpha: 1, ease: Power2.easeInOut, delay: 2 });
-        TweenMax.to(headerTitle, 0, { autoAlpha: 0 });
-    TweenMax.to(headerTitle, 1, { autoAlpha: 1, ease: Power2.easeInOut, delay: 2.5 });
+    
+    TweenMax.to(headerText, 0, { autoAlpha: 0 });
+    TweenMax.to(headerText, 1, { autoAlpha: 1, ease: Power2.easeInOut, delay: 2.5 });
 
     // code for mouse trail below
     var margin = { top: 0, right: 0, bottom: 0, left: 0 },
